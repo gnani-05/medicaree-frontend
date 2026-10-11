@@ -1,0 +1,160 @@
+.mc-menu-item {
+  width: 100%;
+  border: 0;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  background: transparent;
+}
+
+.mc-menu-item.active {
+  background: #1b8e88;
+}
+
+.mc-notice {
+  margin: 18px 0;
+  padding: 13px 16px;
+  border-radius: 9px;
+  background: #e0f7e9;
+  color: #207b48;
+  font-size: 13px;
+}
+
+.mc-doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  padding: 24px;
+}
+
+.mc-doctor-card {
+  padding: 22px;
+  border: 1px solid #e4edf2;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.mc-doctor-icon {
+  display: grid;
+  place-items: center;
+  width: 49px;
+  height: 49px;
+  margin-bottom: 15px;
+  border-radius: 13px;
+  background: #e0f7f2;
+  color: #138b7e;
+}
+
+.mc-doctor-card h3 {
+  margin: 0 0 8px;
+  color: #19364d;
+  font-size: 17px;
+}
+
+.mc-specialty {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #e8f7f4;
+  color: #16877b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.mc-doctor-card p {
+  margin: 12px 0;
+  color: #74869a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mc-booking-panel {
+  max-width: 850px;
+}
+
+.mc-booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 25px;
+}
+
+.mc-booking-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #40566b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mc-booking-form input,
+.mc-booking-form select {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #dce5ee;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #263f55;
+  font: inherit;
+  font-weight: 400;
+}
+
+.mc-booking-form input:focus,
+.mc-booking-form select:focus {
+  border-color: #16a99b;
+  box-shadow: 0 0 0 3px rgba(22, 169, 155, 0.1);
+}
+
+.mc-doctor-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #effaf8;
+  color: #587568;
+  font-size: 12px;
+}
+
+.mc-doctor-detail strong {
+  color: #167d72;
+  font-size: 14px;
+}
+
+.mc-book-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px 16px;
+  border: 0;
+  border-radius: 9px;
+  background: #138d83;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mc-book-submit:hover {
+  background: #0e756d;
+}
+
+.mc-booking-form > .mc-book-submit {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  .mc-booking-form {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .mc-booking-form > .mc-book-submit {
+    grid-column: auto;
+  }
+}

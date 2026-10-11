@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  }
+
+:root {
+font-family: 'DM Sans', sans-serif;
+color: #183b4e;
+background: #f3f7fa;
+font-synthesis: none;
+text-rendering: optimizeLegibility;
+}
+
+body {
+margin: 0;
+min-width: 320px;
+min-height: 100vh;
+}
+
+button,
+input {
+font: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+.page {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background:
+radial-gradient(ellipse at 15% 25%, #dceff4 0, transparent 38%),
+#f3f7fa;
+}
+
+.navbar {
+height: 82px;
+padding: 0 8%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgba(255, 255, 255, 0.92);
+border-bottom: 1px solid #e6edf1;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+font-family: 'Manrope', sans-serif;
+font-size: 25px;
+font-weight: 800;
+color: #143d52;
+}
+
+.brand-icon {
+display: grid;
+place-items: center;
+width: 39px;
+height: 39px;
+border-radius: 12px;
+background: #087f8c;
+color: white;
+font-size: 25px;
+}
+
+.nav-tag {
+color: #6a8290;
+font-size: 13px;
+}
+
+.main-layout {
+width: min(1100px, 90%);
+margin: auto;
+padding: 65px 0;
+display: grid;
+grid-template-columns: 1fr 430px;
+align-items: center;
+gap: 80px;
+flex: 1;
+}
+
+.welcome {
+max-width: 480px;
+}
+
+.eyebrow {
+color: #087f8c;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+.welcome h1 {
+margin: 20px 0;
+font-family: 'Manrope', sans-serif;
+font-size: clamp(36px, 4.5vw, 56px);
+line-height: 1.15;
+letter-spacing: -2px;
+color: #143d52;
+}
+
+.welcome > p {
+max-width: 440px;
+margin-bottom: 32px;
+color: #6a8290;
+line-height: 1.9;
+font-size: 15px;
+}
+
+.feature {
+display: flex;
+align-items: center;
+gap: 12px;
+margin: 18px 0;
+color: #365b6b;
+font-size: 14px;
+}
+
+.feature span {
+display: grid;
+place-items: center;
+width: 23px;
+height: 23px;
+border-radius: 50%;
+background: #d6efea;
+color: #087f72;
+font-weight: 700;
+}
+
+.login-card {
+padding: 34px;
+background: white;
+border: 1px solid #e6edf1;
+border-radius: 22px;
+box-shadow: 0 20px 60px rgba(24, 59, 78, 0.09);
+}
+
+.card-heading h2 {
+margin: 12px 0 8px;
+font-family: 'Manrope', sans-serif;
+font-size: 29px;
+color: #143d52;
+}
+
+.card-heading p {
+margin: 0;
+color: #82939d;
+font-size: 13px;
+}
+
+.role-tabs {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 5px;
+padding: 5px;
+margin: 27px 0;
+border-radius: 11px;
+background: #f1f5f7;
+}
+
+.role {
+padding: 11px 4px;
+border: 0;
+border-radius: 8px;
+background: transparent;
+color: #6a8290;
+font-size: 13px;
+font-weight: 600;
+}
+
+.role.active {
+background: white;
+color: #087f8c;
+box-shadow: 0 2px 8px #143d5212;
+}
+
+.login-card form {
+display: flex;
+flex-direction: column;
+gap: 17px;
+}
+
+.login-card label {
+display: flex;
+flex-direction: column;
+gap: 8px;
+color: #365b6b;
+font-size: 12px;
+font-weight: 700;
+}
+
+.login-card input {
+width: 100%;
+padding: 13px 14px;
+border: 1px solid #dce5e9;
+border-radius: 9px;
+outline: none;
+color: #183b4e;
+background: #fff;
+font-size: 13px;
+transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-card input:focus {
+border-color: #087f8c;
+box-shadow: 0 0 0 3px #087f8c18;
+}
+
+.submit-btn {
+width: 100%;
+margin-top: 5px;
+padding: 14px;
+border: 0;
+border-radius: 9px;
+background: #087f8c;
+color: white;
+font-weight: 700;
+transition: background 0.2s, transform 0.2s;
+}
+
+.submit-btn:hover {
+background: #066773;
+transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+cursor: wait;
+opacity: 0.7;
+}
+
+.switch-mode {
+margin: 22px 0 0;
+text-align: center;
+color: #82939d;
+font-size: 12px;
+}
+
+.switch-mode button {
+border: 0;
+background: none;
+color: #087f8c;
+font-weight: 700;
+}
+
+.admin-note {
+text-align: center;
+color: #82939d;
+font-size: 12px;
+}
+
+.message {
+margin-top: 17px;
+padding: 12px;
+border-radius: 8px;
+background: #eaf5f4;
+color: #176b64;
+font-size: 13px;
+line-height: 1.6;
+overflow-wrap: anywhere;
+}
+
+footer {
+padding: 22px;
+text-align: center;
+border-top: 1px solid #e6edf1;
+color: #82939d;
+font-size: 12px;
+}
+
+@media (max-width: 850px) {
+.main-layout {
+grid-template-columns: 1fr;
+gap: 35px;
+max-width: 480px;
+padding: 42px 0;
+}
+
+.welcome h1 {
+font-size: 40px;
+}
+
+.login-card {
+padding: 26px;
+}
+}
+
+@media (max-width: 480px) {
+.navbar {
+height: 70px;
+padding: 0 5%;
+}
+
+.brand {
+font-size: 21px;
+}
+
+.nav-tag {
+font-size: 10px;
+}
+
+.main-layout {
+width: 92%;
+}
+}
